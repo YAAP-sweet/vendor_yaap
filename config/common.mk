@@ -129,6 +129,9 @@ OVERRIDE_TARGET_FLATTEN_APEX := true
 # # prebuilt vendors, as init reads /product/build.prop after /vendor/build.prop
 PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
 
+# Inherit from rro_overlays config
+$(call inherit-product, vendor/yaap/config/rro_overlays.mk)
+
 ifeq ($(TARGET_BUILD_GAPPS),true)
     $(call inherit-product-if-exists, vendor/google/gms/config.mk)
 endif
