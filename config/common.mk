@@ -66,6 +66,10 @@ PRODUCT_COPY_FILES += \
     vendor/yaap/prebuilt/common/etc/permissions/yaap-privapp-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/yaap-privapp-permissions.xml \
     vendor/yaap/prebuilt/common/etc/permissions/yaap-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/yaap-power-whitelist.xml
 
+# priv-app permissions
+PRODUCT_COPY_FILES += \
+    vendor/yaap/prebuilt/common/etc/permissions/privapp-permissions-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-whitelist.xml
+
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
     vendor/yaap/prebuilt/common/etc/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
