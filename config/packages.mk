@@ -14,6 +14,13 @@ PRODUCT_PACKAGES += \
     MatLog \
     OpenDelta \
 
+TARGET_BUILD_LAWNCHAIR ?= true
+ifeq ($(strip $(TARGET_BUILD_LAWNCHAIR)),true)
+include vendor/lawnchair/lawnchair.mk
+# Lawnicons
+$(call inherit-product-if-exists, vendor/lawnicons/overlay.mk)
+endif
+
 ifneq ($(TARGET_BUILD_GAPPS),true)
 PRODUCT_PACKAGES += \
     Etar \
