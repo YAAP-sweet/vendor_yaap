@@ -140,8 +140,8 @@ PRODUCT_HOST_PACKAGES += \
     signapk \
     brotli
 
-# Themes
-$(call inherit-product, vendor/themes/common.mk)
+# ThemeOverlays
+include packages/overlays/Themes/themes.mk
 
 # Sepolicy
 $(call inherit-product, vendor/yaap/config/sepolicy.mk)
