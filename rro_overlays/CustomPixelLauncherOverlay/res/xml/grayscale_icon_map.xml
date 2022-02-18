@@ -52,6 +52,7 @@
     <icon drawable="@drawable/themed_icon_calculator" package="com.google.android.calculator" />
     <icon drawable="@drawable/themed_icon_call_recorder" package="com.github.axet.callrecorder" />
     <icon drawable="@drawable/themed_icon_calm" package="com.calm.android" />
+    <icon drawable="@drawable/themed_icon_camera" package="com.android.camera" />
     <icon drawable="@drawable/themed_icon_camera" package="com.android.camera2" />
     <icon drawable="@drawable/themed_icon_camera" package="com.android.MGC" />
     <icon drawable="@drawable/themed_icon_camera" package="com.android.mgc" />
@@ -87,6 +88,7 @@
     <icon drawable="@drawable/themed_icon_device_info" package="ru.andr7e.deviceinfohw" />
     <icon drawable="@drawable/themed_icon_dialer" package="com.android.contacts.activities.twelvekeydialer" />
     <icon drawable="@drawable/themed_icon_dialer" package="com.android.incallui" />
+    <icon drawable="@drawable/themed_icon_dialer" package="com.android.dialer" />
     <icon drawable="@drawable/themed_icon_dialer" package="com.google.android.dialer" />
     <icon drawable="@drawable/themed_icon_digital_wellbeing" package="com.google.android.apps.wellbeing" />
     <icon drawable="@drawable/themed_icon_discord" package="com.discord" />
