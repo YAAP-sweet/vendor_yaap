@@ -132,11 +132,8 @@ PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
 # Inherit from rro_overlays config
 $(call inherit-product, vendor/yaap/config/rro_overlays.mk)
 
-ifeq ($(TARGET_BUILD_GAPPS),true)
-    $(call inherit-product-if-exists, vendor/google/gms/config.mk)
-endif
-
-$(call inherit-product-if-exists, vendor/google/pixel/config.mk)
+# Gapps
+$(call inherit-product, vendor/gms/products/gms.mk)
 
 #OTA tools
 PRODUCT_HOST_PACKAGES += \
